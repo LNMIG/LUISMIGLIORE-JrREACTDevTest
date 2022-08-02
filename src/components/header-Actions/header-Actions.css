@@ -1,0 +1,52 @@
+.headerActionsContainer {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 22px;
+
+    position: absolute;
+    width: 204px;
+    height: 40px;
+    right: 101px;
+    top: 23px;
+}
+.headerActionsContainer .select {
+    width:max-content;
+    height: 40px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+     /* --price-regular-font */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* --c-black */
+    color: #1D1F22;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.headerActionsContainer .cart {
+    width: 40px;
+    height: 40px;
+    background:  white;
+    border: none;
+    
+    cursor: pointer;
+}
+
+.headerActionsContainer .cart .carticon {
+    width: 20px;
+    height: 20px;
+}
