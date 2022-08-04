@@ -1,0 +1,343 @@
+.productCardLoading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* position: absolute; */
+    width: 354px;
+    height: 412px; 
+
+    /* --c-white */
+    background: #FFFFFF;
+}
+.wraperProductCard {
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.productCardContainer {
+    /* Auto layout */
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+
+    /* position: absolute; */
+    width: 354px;
+    height: 412px;  
+
+    /* --c-white */
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.productCardContainer:hover {
+    /* --product-card-box-shadow:hover */
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+.productCardContainer .navlink {
+    text-decoration: none;
+}
+.productCardContainer .imageContainer {
+    position: relative;
+    width: 354px;
+    height: 330px;
+    background: #C4C4C4;
+}
+.productCardContainer .imageContainer .image {
+    /* Image */
+    width: 354px;
+    height: 330px;
+    background: #C4C4C4;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.productCardContainer .imageContainer .circleIcon {
+    /* Circle Icon */
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    right: 15px;
+    bottom: -26px;
+
+    cursor: pointer;
+}
+.productCardContainer .imageContainer .circleIcon .surface{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* --button-box-shadow */
+    filter: drop-shadow(0px 4px 11px rgba(29, 31, 34, 0.1));
+
+    /* --c-primary */
+    background: #5ECE7B;
+    border-radius: 26px;
+    border: none;
+}
+.productCardContainer .imageContainer .circleIcon .surface:hover {
+    box-shadow: 0px 0px 25px black;
+}
+.productCardContainer .imageContainer .circleIcon .surface .vector {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 5.85%;
+    bottom: 4.15%;
+}
+.productCardContainer .image .badge {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    position: absolute;
+    visibility: hidden;
+    width: 61px;
+    height: 35px;
+    left: 0px;
+    top: 8px;
+
+    /* --c-primary */
+    background: #5ECE7B;
+}
+.productCardContainer .image .badge .label {
+    width: 29px;
+    height: 19px;
+
+    /* --badge-font */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 160%;
+
+    /* or 19px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* --c-white */
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.productCardContainer .spacer {
+    /* _layout / --spacer-base */
+    width: 24px;
+    height: 24px;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productCardContainer .content {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    width: 354px;
+    height: 58px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.productCardContainer .title {
+    width: 354px;
+    height: 29px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* identical to box height, or 29px */
+    display: flex;
+    align-items: center;
+
+    /* --c-black */
+    color: #1D1F22;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.productCardContainer .element {
+    /* Auto layout */
+    padding: 0px;
+    gap: 10px;
+
+    width: 354px;
+    height: 29px;
+
+    /* --price-regular-font */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* --c-black */
+    color: #1D1F22;
+}
+.outOfStock{
+    /* Auto layout */
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+
+    /* position: absolute; */
+    width: 354px;
+    height: 412px;  
+
+    /* --c-white */
+    background: #FFFFFF;
+    opacity: 0.5;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.outOfStock .navlink {
+    text-decoration: none;
+    cursor: not-allowed;
+}
+.outOfStock .imageContainer {
+    position: relative;
+    width: 354px;
+    height: 330px;
+    background: #C4C4C4;
+}
+.outOfStock .imageContainer .image {
+    /* Image */
+    width: 354px;
+    height: 330px;
+    background: #C4C4C4;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.outOfStock .spacer {
+    /* _layout / --spacer-base */
+    width: 24px;
+    height: 24px;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.outOfStock .content {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 354px;
+    height: 58px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.outOfStock .title {
+    width: 354px;
+    height: 29px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* identical to box height, or 29px */
+    display: flex;
+    align-items: center;
+
+    /* --c-black */
+    color: #1D1F22;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.outOfStock .element {
+    /* Auto layout */
+    padding: 0px;
+    gap: 10px;
+
+    width: 354px;
+    height: 29px;
+
+    /* --price-regular-font */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* --c-black */
+    color: #1D1F22;
+}
+.outOfStock .noStock {
+    position:absolute;
+    left: 25.42%;
+    right: 25.71%;
+    top: 44.24%;
+    bottom: 43.94%;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    /* identical to box height, or 38px */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #8D8F9A;
+}
