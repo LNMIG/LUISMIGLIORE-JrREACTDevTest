@@ -2,6 +2,7 @@
     position: absolute;
     width: 1440px;
     height: 80px;
-    left: 0px;
-    top: 0px;
+    left: calc((100% - 1440px) / 2 );
+    right: calc((100% - 1440px) / 2 );
+    border: 1px solid magenta;
 }
