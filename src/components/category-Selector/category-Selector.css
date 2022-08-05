@@ -2,7 +2,7 @@
   position: absolute;
   display: inline-block;
   left: 100px;
-  top: calc(50% - 68px/2 - 562.5px);
+  top: calc(50% - 68px/2 - 603px);
 }
 .dropdown_activator {
   display: flex;
