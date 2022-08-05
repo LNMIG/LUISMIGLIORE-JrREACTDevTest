@@ -2,4 +2,12 @@
 font-family: 'Raleway';
 font-style: normal;
 src: local('Raleway Regular'), local('Raleway-Regular'), url('../src/assets/Raleway-Regular.ttf') format('ttf');
+
+font-family: 'Roboto';
+font-style: normal;
+src: local('Roboto Regular'), local('Roboto-Regular'), url('../src/assets/Roboto-Regular.ttf') format('ttf');
+
+font-family: 'Roboto Condensed';
+font-style: normal;
+src: local('Roboto Condensed'), local('Roboto-Condensed'), url('../src/assets/Roboto-Condensed.ttf') format('ttf');
 }
